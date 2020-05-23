@@ -1,8 +1,9 @@
 {
-  "name": "n-readlines",
-  "version": "0.2.8",
+  "name": "n-readlines-next",
+  "version": "1.0.0",
   "description": "Read file line by line without buffering the whole file in memory.",
   "main": "./readlines.js",
+  "types": "./readlines.d.ts",
   "dependencies": {
     "buf-indexof": "^1.0.1"
   },
@@ -31,6 +32,6 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha *_test.js"
   },
-  "author": "Yoan Arnaudov <jonidev@gmail.com>",
+  "author": "Mohamed Lamine Allal <allalmohamedlamine@gmail.com> [Original author ( Yoan Arnaudov <jonidev@gmail.com> )]",
   "license": "MIT"
 }
