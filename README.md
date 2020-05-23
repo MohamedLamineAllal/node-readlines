@@ -2,12 +2,12 @@
 
 # node-readlines-next
 ## Fork
-`node-readlines-next` is a fork of node-readlines! A package developed by Yoan Arnaudov! Original Repo  [here](https://github.com/nacholibre/node-readlines)
+`node-readlines-next` is a fork of `node-readlines`! A package developed by Yoan Arnaudov! Original Repo  [here](https://github.com/nacholibre/node-readlines)
 
 The author wasn't active for 2 years up to now!
 
 I took the deliberate to Fork it! Merged one PR (One bring better performance) [[check here](https://github.com/nacholibre/node-readlines/pull/15)]!
-And added typescript declaration!
+And added **typescript declarations**!
 
 Also if any PR are send! I'll make sure to treat them!
 

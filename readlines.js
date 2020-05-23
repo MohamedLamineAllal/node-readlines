@@ -3,7 +3,7 @@
 var fs = require('fs');
 var bufIndexof = require('buf-indexof');
 
-function LineByLine(file, options) {
+function ReadLines(file, options) {
     options = options || {};
 
     if (!options.readChunk) {
@@ -29,7 +29,7 @@ function LineByLine(file, options) {
     this.reset();
 }
 
-LineByLine.prototype._reachedEndOfAtLeastOneLine = function(buffer, hexNeedle) {
+ReadLines.prototype._reachedEndOfAtLeastOneLine = function(buffer, hexNeedle) {
     for (var i = 0; i < buffer.length; i++) {
         var b_byte = buffer[i];
         if (b_byte === hexNeedle) {
@@ -40,7 +40,7 @@ LineByLine.prototype._reachedEndOfAtLeastOneLine = function(buffer, hexNeedle) {
     return false;
 };
 
-LineByLine.prototype.reset = function() {
+ReadLines.prototype.reset = function() {
     this.bufferData = null;
     this.bytesRead = 0;
 
@@ -56,7 +56,7 @@ LineByLine.prototype.reset = function() {
     this.fdPosition = 0;
 };
 
-LineByLine.prototype._extractLines = function(buffer) {
+ReadLines.prototype._extractLines = function(buffer) {
     var line;
     var lines = [];
     var bufferPosition = 0;
@@ -82,7 +82,7 @@ LineByLine.prototype._extractLines = function(buffer) {
     return lines;
 };
 
-LineByLine.prototype._extractLines = function(buffer) {
+ReadLines.prototype._extractLines = function(buffer) {
     var line;
     var lines = [];
 
@@ -106,7 +106,7 @@ LineByLine.prototype._extractLines = function(buffer) {
 };
 
 
-LineByLine.prototype._readChunk = function() {
+ReadLines.prototype._readChunk = function() {
     var totalBytesRead = 0;
 
     var bytesRead;
@@ -134,7 +134,7 @@ LineByLine.prototype._readChunk = function() {
     }
 };
 
-LineByLine.prototype.next = function() {
+ReadLines.prototype.next = function() {
     var line = false;
 
     if (this.eofReached && this.linesCache.length === 0) {
@@ -176,4 +176,4 @@ LineByLine.prototype.next = function() {
     return line;
 };
 
-module.exports = LineByLine;
+module.exports = ReadLines;
