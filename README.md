@@ -6,7 +6,8 @@
 
 The author wasn't active for 2 years up to now!
 
-I took the deliberate to Fork it! Merged some of the PR (One bring better performance)! And added typescript declaration!
+I took the deliberate to Fork it! Merged one PR (One bring better performance) [[check here](https://github.com/nacholibre/node-readlines/pull/15)]!
+And added typescript declaration!
 
 Also if any PR are send! I'll make sure to treat them!
 
