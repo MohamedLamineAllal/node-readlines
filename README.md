@@ -57,3 +57,17 @@ while (line = liner.next()) {
 
 console.log('end of line reached');
 ```
+
+## Typescript
+
+For imports and types
+
+```ts
+import LineReader, { ReadLinesOptions } from 'n-readlines-next';
+```
+
+```ts
+export class CsvReader {
+  private _lineReader: LineReader;
+}
+```
