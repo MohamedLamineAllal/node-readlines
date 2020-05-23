@@ -46,8 +46,8 @@ Resets the pointer and starts from the beginning of the file. This works only if
 
 ## Example
 ```javascript
-var lineByLine = require('n-readlines');
-var liner = new lineByLine('./textFile.txt');
+var ReadLines = require('n-readlines');
+var liner = new ReadLines('./textFile.txt');
 
 var line;
 var lineNumber = 0;
