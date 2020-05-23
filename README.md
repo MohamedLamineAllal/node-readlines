@@ -4,9 +4,11 @@
 ## Fork
 `node-readlines-next` is a fork of node-readlines! A package developed by Yoan Arnaudov! Original Repo  [here](https://github.com/nacholibre/node-readlines)
 
-The author wasn't active for 2 years up to now! 3 PR holding! I took the deliberate to Fork it! Merge some of the PR (One insure better performance)! And add typescript declaration!
+The author wasn't active for 2 years up to now!
 
-Also if any PR are send i'll make sure to treat them!
+I took the deliberate to Fork it! Merged some of the PR (One bring better performance)! And added typescript declaration!
+
+Also if any PR are send! I'll make sure to treat them!
 
 ## Original author description
 Reading file line by line may seem like a trivial problem, but in node, there is no straightforward way to do it. There are a lot of libraries using Transform Streams to achieve it, but it seems like a overkill, so I've wrote simple version using only the `filesystem` module of node. Note that this is *synchronous* library.

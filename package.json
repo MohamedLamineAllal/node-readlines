@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/nacholibre/node-readlines.git"
+    "url": "git@github.com:MohamedLamineAllal/node-readlines-next.git"
   },
   "keywords": [
     "read",
@@ -32,6 +32,6 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha *_test.js"
   },
-  "author": "Mohamed Lamine Allal <allalmohamedlamine@gmail.com> [Original author ( Yoan Arnaudov <jonidev@gmail.com> )]",
+  "author": "Mohamed Lamine Allal <allalmohamedlamine@gmail.com>",
   "license": "MIT"
 }
